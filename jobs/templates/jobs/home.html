@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Album example for Bootstrap</title>
+
+    <title>Anirudh Sodhani</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
 
@@ -25,15 +25,15 @@
 
     <header>
        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Anirudh Sodhani</a>
+  <a class="navbar-brand" href="{% url 'home' %}">Anirudh Sodhani</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-      <a class="nav-item nav-link " href="#">Facebook</a>
-      <a class="nav-item nav-link" href="{% static 'Anirudh_Sodhani_CV.pdf' %}">Resume</a>
-      <a class="nav-item nav-link active" href="#">Blog</a>
+      <a class="nav-item nav-link active" href="https://facebook.com/anirudh.sodhani.9/">Facebook</a>
+      <a class="nav-item nav-link active" href="{% static 'Anirudh_Sodhani_CV.pdf' %}">Resume</a>
+      <a class="nav-item nav-link active" href="{% url 'allblogs' %}">Blog</a>
     </div>
   </div>
 </nav>
@@ -47,8 +47,8 @@
           <p class="lead text-muted">Hi there! I am Anirudh and I like making Django websites. Yuhu</p>
           <p>
             <a href="mailto:anirudh.ma8a@gmail.com" class="btn btn-primary my-2">Email Me</a>
-
           </p>
+           <img src ="{% static 'Anirudh.jpeg' %}"  height="200" width="200"/>
         </div>
       </section>
 
